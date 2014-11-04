@@ -1,15 +1,23 @@
-<!DOCTYPE HTML> 
-<html> 
+<!DOCTYPE html> 
+<html lang="pt-br">
  <head> 
- <title>Exemplo Mobile</title>
- <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, height=device-height" /> 
-  <script type="text/javascript" src="cordova.js"></script>
-  <script type="text/javascript" src="js/jquery.min.js "></script>
- <script type="text/javascript" src="js/index.js"></script> 
+ <title>Cálculo IMC</title> 
  </head> 
-  <body>
- Nome:<input id="txtNome" type="text"> 
- <button id="btOk">Ok</button> 
-  </body> 
- </html> 
+ <body>
+ <header><h1>Cálculo IMC</h1></header> 
+ <div class="content" >
+ <form name="calculoIMC">
+ <label for="altura">Altura:</label>
+ <input type="text" name="altura" placeholder="Digite a altura"/>
+ <br />
+ <label for="peso">Peso:</label> 
+ <input type="text" name="peso" placeholder="Digite o peso"/>
+ <br /> 
+ <input type="button" value="Calcular IMC" onClick="calcular()" />
+ </form> 
+ <div id="resultado">
+ </div>
+ </div>
+ </body>
+ <script src="index.js"></script> </html>
+
